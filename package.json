@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./dist/server.js",
     "build": "tsc --project ./src && ng build --aot",
-    "serve": "concurrently \"tsc -w --project ./src\" \"nodemon\" \"ng s --proxy proxy.conf.json\""
+    "build-ui": "ng build --aot",
+    "serve": "concurrently \"tsc -w --project ./src\" 'nodemon' \"ng s --proxy proxy.conf.json\""
   },
   "private": true,
   "dependencies": {
@@ -31,6 +32,7 @@
     "@angular/cli": "^1.5.0",
     "@angular/compiler-cli": "^5.0.1",
     "@angular/language-service": "^5.0.1",
+    "@types/express": "^4.0.39",
     "@types/jasmine": "^2.6.3",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "^8.0.51",

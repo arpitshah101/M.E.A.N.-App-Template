@@ -7,7 +7,7 @@ import * as readline from 'readline';
 
 import { } from './modules';
 
-import { } from './routes';
+import { TestRoutes } from './routes';
 
 const app = express();
 
@@ -20,13 +20,16 @@ app.use((req: express.Request, res: express.Response, next: () => void) => {
     next();
 });
 
-app.use('/static', express.static(path.join(__dirname, 'public')));
-
 // Add routing to each of the different subroute modules
-// app.use('/api/');
+app.use('/api/', [TestRoutes, (req: express.Request, res: express.Response) => {
+    // If no API routes are valid, send 404 for not found
+    if (!res.headersSent) {
+        res.sendStatus(404);
+    }
+}]);
 
-app.get('/', (req: express.Request, res: express.Response) => {
-    res.redirect('/static');
+app.use(express.static(path.join(__dirname, 'public')), (req: express.Request, res: express.Response) => {
+    res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 const port = process.env.NODE_APP_PORT || '3000';

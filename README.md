@@ -2,12 +2,20 @@
 
 This project is a skeleton foundation for future projects using the following technologies:
 - Node.js
+- Yarn package manager
 - Express.js
 - Angular (>= 5.0.x)
 - MySQL
 - Bootstrap
 - JQuery
 - Bluebird
+
+## Setup
+
+1. Clone the repository
+2. Install the node module dependencies using `yarn`
+3. Run `yarn serve` to see the live development version on your browser
+4. [Optional] Run `ng set warnings.typescriptMismatch=false` to disable typescript mismatch warnings
 
 ## Angular Front-end
 
