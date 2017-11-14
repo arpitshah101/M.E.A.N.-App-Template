@@ -14,16 +14,17 @@ This project is a skeleton foundation for future projects using the following te
 
 1. Clone the repository
 2. Install the node module dependencies using `yarn`
-3. Run `yarn serve` to see the live development version on your browser
+3. Run `yarn build` to build the project and then use `yarn start` to start the server and see what's going on at `localhost:3000`
 4. [Optional] Run `ng set warnings.typescriptMismatch=false` to disable typescript mismatch warnings
-
+5. You can use `ng serve --aot --proxy proxy.conf.json` to launch a live server for coding the UI faster!
+    - P.S. Having the server running on port 3000 using `yarn start` will help test your queries at the same time while seeing what the UI looks like
 ## Angular Front-end
 
 This project's front-end was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
 ## Development server
 
-Run `yarn serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng s --aot --proxy proxy.conf.json` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 

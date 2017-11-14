@@ -178,6 +178,10 @@
   dependencies:
     "@angular-devkit/core" "0.0.20"
 
+"@types/bluebird@^3.5.18":
+  version "3.5.18"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.18.tgz#6a60435d4663e290f3709898a4f75014f279c4d6"
+
 "@types/body-parser@*":
   version "1.16.8"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.16.8.tgz#687ec34140624a3bec2b1a8ea9268478ae8f3be3"
@@ -212,6 +216,12 @@
 "@types/mime@*":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.0.tgz#5a7306e367c539b9f6543499de8dd519fac37a8b"
+
+"@types/mysql@^2.15.1":
+  version "2.15.1"
+  resolved "https://registry.yarnpkg.com/@types/mysql/-/mysql-2.15.1.tgz#8cd75c484daac9e57f72786dfc7bc4ccecbd5b7e"
+  dependencies:
+    "@types/node" "*"
 
 "@types/node@*", "@types/node@^8.0.51":
   version "8.0.51"
@@ -716,9 +726,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-bootstrap@^3.3.7:
-  version "3.3.7"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
+bootstrap@4.0.0-beta.2:
+  version "4.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.0.0-beta.2.tgz#4d67d2aa2219f062cd90bc1247e6747b9e8fd051"
 
 brace-expansion@^1.1.7:
   version "1.1.8"
@@ -4166,6 +4176,10 @@ pkg-dir@^2.0.0:
   resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-2.0.0.tgz#f6d5d1109e19d63edf428e0bd57e12777615334b"
   dependencies:
     find-up "^2.1.0"
+
+popper.js@^1.12.3:
+  version "1.12.8"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.12.8.tgz#b59b57473621feaf03726e1abe7c17c4b23c8564"
 
 portfinder@^1.0.9, portfinder@~1.0.12:
   version "1.0.13"
